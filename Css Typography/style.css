@@ -1,0 +1,17 @@
+body{
+    padding: 10%;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 100;
+    text-decoration: none;
+    text-align: justify;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+}
+input, button{
+    text-decoration: none;
+    font: inherit;
+    background-color:beige;
+    font-family: 'Times New Roman', Times, serif;
+}
