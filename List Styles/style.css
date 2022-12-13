@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+  
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+ol li{
+    list-style-position: inside;
+    list-style-type: lower-roman;
+}
+ul li{
+    list-style-position: inside;
+    list-style-type: square;
+}
+ul li:nth-child(2){
+    color: darkmagenta;
+}
+::marker{
+    color:burlywood
+}
