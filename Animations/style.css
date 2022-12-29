@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    min-height: 100vh;
+    background-image: radial-gradient(white,gray);
+    display:grid;
+    /* justify-content: center;
+    align-items: center; */
+place-content: center;
+gap:15rem;
+
+}
+main{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+}
+.square{
+    background-color: antiquewhite;
+    margin: 2px;
+    padding: 5px;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    display: grid;
+    place-content: center;
+
+}
+div:first-child{
+    background-color: rgb(255, 166, 0);
+    /* transform: translateX(40%);
+    transform: rotatex(180deg); */
+    /* transform:scaleX(120%); */
+   
+}
+div:nth-child(2){
+    background-color: white;
+    /* transform:translateY(30%);
+    transform: rotateY(180deg); */
+    /* transform: scaleY(80%); */
+    
+}
+div:last-child{
+    background-color: rgb(0, 221, 0);
+    /* transform: translate(100%,10%);
+    transform: rotateZ(45deg); */
+    /* transform: scale(50%,50%); */
+
+    
+}
+div:hover{
+    background-color: blueviolet;
+
+    transition-property:background-color,transform;
+    transition-duration: 2s 3s;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+}
+div:last-child:hover{
+transform: rotate(180deg);
+}
+.animate{
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+}
+@keyframes slide{
+    0%{
+        transform: translatex(0);
+    }
+     33%{
+        transform: translateX(600px) rotate(180deg);
+        background-color: pink;
+    }
+    66%{
+        transform: translateX(-600px) rotate(-180deg);
+        background-color: brown;
+    }
+    100%{
+        transform: translateX(0);
+        background-color: blue;
+    }
+}
